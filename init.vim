@@ -6,11 +6,9 @@ call plug#begin()
 	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'plasticboy/vim-markdown'
 	Plug 'pangloss/vim-javascript'
-	Plug 'dense-analysis/ale'
 	Plug 'rust-lang/rust.vim'
 	Plug 'racer-rust/vim-racer'
 	Plug 'timonv/vim-cargo'
-	Plug 'valloric/youcompleteme'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'amdt/vim-niji'
 	Plug 'udalov/kotlin-vim'
@@ -24,6 +22,7 @@ set hlsearch
 set tabstop=4
 set shiftwidth=4
 set noexpandtab	
+set hidden
 let mapleader = "\\"
 let maplocalleader = "'"
 
@@ -52,7 +51,4 @@ if has("gui_win32")
 	set guioptions-=m "turn off menu bar
 	set guioptions-=T "turn off toolbar
 endif
-
-"My Mappings for YCM
-let g:ycm_autoclose_preview_window_after_insertion = 1
 
